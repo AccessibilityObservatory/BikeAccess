@@ -68,8 +68,8 @@ if __name__ == "__main__":
     output_path = config["outputpath"]
 
     # read input data
-    origins_gdf = gpd.read_file(f"{data_path}/{origin_filename}")[0:100]
-    destinations_gdf = gpd.read_file(f"{data_path}/{destination_filename}")[0:100]
+    origins_gdf = gpd.read_file(f"{data_path}/{origin_filename}")
+    destinations_gdf = gpd.read_file(f"{data_path}/{destination_filename}")
 
     #build a transport network given street network
     startTime = time.time()
