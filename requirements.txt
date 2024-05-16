@@ -2,13 +2,14 @@ ConfigArgParse
 contextily
 filelock
 folium
-geopandas
 importlib_resources
 joblib
 jpype1
 numpy
-pandas<2.1.0
 pyproj
 psutil
 requests
-r5py
+shapely>=2.0
+pandas<2.1.0
+geopandas
+r5py==0.1.1
