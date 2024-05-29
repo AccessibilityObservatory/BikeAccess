@@ -25,8 +25,15 @@ Check the `requirements.txt` for all the required software dependencies. One cou
 
 ## Prepare input datasets
 R5py requires street network, destinations and origins as input datasets to perform travel time calculation. These input datasets should be prepared in specific formats:    
-1. An OpenStreetMap network in `.pbf`  format     
-2. The spatial data of origin/destination pairs in ESRI shapefile format, which can be used as origin/destination pairs in a travel time matrix calculation. The file should be a POINT sf object with WGS84 CRS containing 'id' and 'geometry' column.
+1. An OpenStreetMap network in `.pbf`  format  
+2. The spatial data of origin/destination pairs in ESRI shapefile format, which can be used as origin/destination pairs in a travel time matrix calculation. The spatial input data must contain a **unique** 'id' and **point** 'geometry' columns, e.g.
+
+|column | description |
+|---- | --- | 
+|id | Unique string or integer identifier e.g. geoid |
+|geometry | Point y-coord in decimal degrees (WGS84 CRS) |
+|... | ... (other fields will be ignored) |
+
 
 ## Calculate bicycle travel time Access
 The tool contains a Python module and one configuration file:
