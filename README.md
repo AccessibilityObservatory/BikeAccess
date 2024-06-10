@@ -26,7 +26,7 @@ Check the `requirements.txt` for all the required software dependencies. One cou
 ## Prepare input datasets
 R5py requires street network, destinations and origins as input datasets to perform travel time calculation. These input datasets should be prepared in specific formats:    
 1. An OpenStreetMap network in `.pbf`  format  
-2. The spatial data of origin/destination pairs in ESRI shapefile format, which can be used as origin/destination pairs in a travel time matrix calculation. The spatial input data must contain a **unique** 'id' and **point** 'geometry' columns, e.g.
+2. The spatial data of origin/destination pairs in ESRI shapefile format, which can be used as origin/destination pairs in a travel time matrix calculation. The spatial input data must contain a **unique** 'id' and **single point** 'geometry' columns, e.g.
 
 |column | description |
 |---- | --- | 
